@@ -12,11 +12,12 @@
 <body>
     <div class="container">
         <h1>Calcula Pontos</h1>
-        <p>Quer saber com quantos pontos o seu time está na Tabela? Informe a quantidade de vitórias e de empates que calculamos para você!</p>
+        <p>Quer saber com quantos pontos o seu time está na Tabela? Preencha os dados a seguir que calculamos para você!</p>
         <form action="">
-            <label for="">Nº de vitórias: <input type="number" id="vitorias" class="form-control"></label>
+            <label for="">Nome do time: <input type="text" id="nomeTime" class="form-control"></label>
+            <label for="" id="numeroVitorias">Nº de vitórias: <input type="number" id="vitorias" class="form-control"></label>
             <label for="">Nº de empates: <input type="number" id="empates"  class="form-control"></label>
-            <input type="button" class="btn btn-primary" value="Calcular" onclick="confereInputs()">
+            <input type="button" class="btn btn-primary" value="Calcular" onclick="confereInputs(), retornaMes()">
         </form>
         <div id="resultado"></div>
     </div>
