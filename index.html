@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Lorena Lobo">
+    <title>Calcula Pontos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcula Pontos</h1>
+        <p>Quer saber com quantos pontos o seu time está na Tabela? Informe a quantidade de vitórias e de empates que calculamos para você!</p>
+        <form action="">
+            <label for="">Nº de vitórias: <input type="number" id="vitorias" class="form-control"></label>
+            <label for="">Nº de empates: <input type="number" id="empates"  class="form-control"></label>
+            <input type="button" class="btn btn-primary" value="Calcular" onclick="confereInputs()">
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
